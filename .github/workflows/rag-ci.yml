@@ -31,3 +31,9 @@ jobs:
       run: |
         pip install nbconvert jupyter
         jupyter nbconvert --to notebook --execute notebooks/RETO_RAG.ipynb --output output.ipynb
+
+    - name: Upload executed notebook
+      uses: actions/upload-artifact@v3
+      with:
+        name: executed-notebook
+        path: output.ipynb
