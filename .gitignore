@@ -1,0 +1,4 @@
+# No subir credenciales ni bases locales
+.env
+chroma_db/
+__pycache__/
